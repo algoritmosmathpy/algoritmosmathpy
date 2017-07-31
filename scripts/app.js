@@ -1,6 +1,6 @@
 window.onload = function(){
 	$('#title').fadeIn(2000, function(){
-		$('main').prepend('<center><div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp" style="display:none"><div class="mdl-card__title"><h2 class="mdl-card__title-text">¿Que es "Algoritmos MathPy"?</h2></div><div class="mdl-card__supporting-text"><p>Aquí en "Algoritmos MathPy" podrás encontrar una lista con una gran variedad de Algoritmos para la resolución de problemas matemáticos. Todos escritos en el lenguaje de programación, "Python".<br><br> Todos estos algoritmos te ayudaran a resolver problemas que impliquen matemáticas, como también Algoritmos que calculen las propiedades de un problema de Cinemática (Usando formulas de Física), como por ejemplo, "calcular la velocidad final de un cuerpo que cae de una altura de 35 metros", todo esto y más aquí en "Algoritmos MathPy".</p></div></div></center>');
+		$('main').prepend('<center><div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp" style="display:none"><div class="mdl-card__title"><h2 class="mdl-card__title-text">¿Que es "Algoritmos MathPy"?</h2></div><div class="mdl-card__supporting-text"><p>Aquí en "Algoritmos MathPy" podrás encontrar una lista con una gran variedad de Algoritmos para la resolución de problemas.<br><br> <a href="https://www.facebook.com/AlgoritmosMathPy/">Visita Nuestra Pagina de Facebook</a>   .</p></div></div></center>');
 		$('.mdl-card').fadeIn(2000);
 	});
 }
