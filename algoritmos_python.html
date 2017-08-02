@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Algoritmos MathPy</title>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-orange.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-103630291-1', 'auto');
+  ga('send', 'pageview');
+</script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script>
+  var config = {
+    apiKey: "AIzaSyCM02MCBX8G5PLkbdIUSO7BMFaTuj0cjLE",
+    authDomain: "algoritmos-mathpy.firebaseapp.com",
+    databaseURL: "https://algoritmos-mathpy.firebaseio.com",
+    projectId: "algoritmos-mathpy",
+    storageBucket: "",
+    messagingSenderId: "34598625937"
+  };
+  firebase.initializeApp(config);
+</script>
+    <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded" ng-app="aplicacionAlgoritmos">
+      <main class="mdl-layout__content">
+        <div class="demo-blog__posts mdl-grid" ng-controller="controlador">
+          <div class="mdl-card on-the-road-again mdl-cell mdl-cell--12-col" id="card_welcome" style="background-position: 100% 90%;background-repeat: no-repeat;display:none">
+            <div class="mdl-card__media mdl-color-text--grey-50">
+            </div>
+          </div>
+          <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col" ng-repeat="algoritmos in algoritmo">
+            <a name={{algoritmos.ancle}} ></a>
+            <a href={{algoritmos.url}} class="mdl-card__media mdl-color-text--grey-50" style="background-image: url({{algoritmos.img}})">
+            </a>
+            <div class="mdl-color-text--grey-600 mdl-card__supporting-text">
+              {{algoritmos.info}}
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="minilogo"></div>
+              <div>
+                <strong>Publicado el: </strong>
+                <span>{{algoritmos.datePublic}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="mdl-layout__obfuscator"></div>
+    </div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+</html>
