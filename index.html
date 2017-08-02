@@ -44,7 +44,7 @@
   firebase.initializeApp(config);
 </script>
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-      <header class="demo-header mdl-layout__header ">
+      <header class="demo-header mdl-layout__header" style="margin-left:0px">
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title">Algoritmos MathPy</span>
           <div class="mdl-layout-spacer"></div>
@@ -59,7 +59,7 @@
           </div>
         </div>
       </header>
-      <main class="mdl-layout__content mdl-color--grey-100">
+      <main class="mdl-layout__content mdl-color--grey-100" style="margin-left:0px">
         <div class="mdl-grid demo-content">
           <div class="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--8-col">
             <center>
@@ -106,13 +106,13 @@
           <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
            </center>
             
-            <div class="demo-card-event mdl-card mdl-shadow--2dp" style="display:inline-block;margin:9px;background-color:#28a745;" ng-repeat="algoritmos in algoritmo | filter: al">
+            <div class="demo-card-event mdl-card mdl-shadow--2dp" style="display:inline-block;margin:9px" ng-repeat="algoritmos in algoritmo | filter: al">
               <div class="mdl-card__title mdl-card--expand">
                 <h4>
                   {{algoritmos.name}}
                 </h4>
               </div>
-            <div class="mdl-card__actions mdl-card--border" style="height:210px">
+            <div class="mdl-card__actions mdl-card--border">
               <a href={{algoritmos.url}} class="mdl-button mdl-js-button mdl-js-ripple-effect" style="color:white">
                 Descargar Algoritmo
               </a>
