@@ -9,7 +9,7 @@ angular.module('aplicacionAlgoritmos', []).controller("controlador", function($s
 	var ref = new firebase.database().ref("algoritmos");
 		ref.on("child_added", function(snapshot, prevChildKey){
   		var datos = snapshot.val();
-		$('#p2').removeClass('mdl-progress mdl-js-progress mdl-progress__indeterminate');
+		$('#p2').attr("display","none");
   		$scope.$apply(function(){
   			$scope.algoritmo.push({name: datos.nombre, info: datos.descripcion, url: datos.url, img: datos.img, ancle: datos.ancle, datePublic: datos.date});
   		})
