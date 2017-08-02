@@ -216,7 +216,7 @@ _:-ms-input-placeholder, :root .demo-graph {
 
 .demo-card-event.mdl-card {
   height: 256px;
-  background: #3E4EB8;
+  background: #00BCD4;
 }
 .demo-card-event > .mdl-card__actions {
   border-color: rgba(255, 255, 255, 0.2);
@@ -227,6 +227,7 @@ _:-ms-input-placeholder, :root .demo-graph {
 }
 .demo-card-event > .mdl-card__title > h4 {
   margin-top: 0;
+  color: #ffffff;
 }
 .demo-card-event > .mdl-card__actions {
   display: flex;
@@ -245,10 +246,3 @@ p{
   font-size:18px;
 }
 
-.mdl-layout__header{
- margin-left:0px;
-}
-
-.mdl-layout__content mdl-color--grey-100{
- margin-left:0px; 
-}
