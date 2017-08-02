@@ -238,10 +238,17 @@ _:-ms-input-placeholder, :root .demo-graph {
 .demo-card-event > .mdl-card__title,
 .demo-card-event > .mdl-card__actions,
 .demo-card-event > .mdl-card__actions > .mdl-button {
-  height:220px;
   color: #fff;
 }
 
 p{
   font-size:18px;
+}
+
+.mdl-layout__header{
+ margin-left:0px;
+}
+
+main{
+ margin-left:0px;
 }
