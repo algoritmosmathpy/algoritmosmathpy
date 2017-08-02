@@ -223,6 +223,7 @@ _:-ms-input-placeholder, :root .demo-graph {
 }
 .demo-card-event > .mdl-card__title {
   align-items: flex-start;
+  height:210px;
 }
 .demo-card-event > .mdl-card__title > h4 {
   margin-top: 0;
@@ -237,7 +238,6 @@ _:-ms-input-placeholder, :root .demo-graph {
 }
 .demo-card-event > .mdl-card__title,
 {
-  height:210px;
   color: #fff;
 }
 
