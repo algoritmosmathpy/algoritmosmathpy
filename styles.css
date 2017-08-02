@@ -178,7 +178,7 @@ _:-ms-input-placeholder, :root .demo-graph {
 }
 .demo-updates .mdl-card__title {
   min-height: 200px;
-  background-image: url('./images/python1.png');
+  background-image: url('./python1.png');
   background-position: 50% 70%;
   background-repeat: no-repeat;
 }
