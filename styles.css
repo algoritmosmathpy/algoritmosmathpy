@@ -249,6 +249,6 @@ p{
  margin-left:0px;
 }
 
-main{
- margin-left:0px;
+.mdl-layout__content mdl-color--grey-100{
+ margin-left:0px; 
 }
