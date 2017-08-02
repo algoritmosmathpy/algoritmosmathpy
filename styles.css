@@ -229,6 +229,7 @@ _:-ms-input-placeholder, :root .demo-graph {
   margin-top: 0;
 }
 .demo-card-event > .mdl-card__actions {
+  display: flex;
   box-sizing:border-box;
   align-items: center;
 }
