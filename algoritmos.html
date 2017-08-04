@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="canonical" href="#">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algoritmos MathPy</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-orange.min.css">
+  <script src="./scripts/angular.min.js"></script>
+  <script src="./scripts/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="scripts/appAlgoritmos.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/inline.css">
+    <meta name="mobile-web-app-capable" content="yes">
+  <!-- TODO add manifest here -->
+  <link rel="manifest" href="/manifest.json">
+  <!-- Add to home screen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Algoritmos MathPy">
+  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+  <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-103630291-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</head>
+<body>
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script>
+  var config = {
+    apiKey: "AIzaSyCM02MCBX8G5PLkbdIUSO7BMFaTuj0cjLE",
+    authDomain: "algoritmos-mathpy.firebaseapp.com",
+    databaseURL: "https://algoritmos-mathpy.firebaseio.com",
+    projectId: "algoritmos-mathpy",
+    storageBucket: "",
+    messagingSenderId: "34598625937"
+  };
+  firebase.initializeApp(config);
+</script>
+  <header class="header">
+    <h1 class="header__title">Algoritmos MathPy</h1>
+  </header>
+    <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
+      <main class="mdl-layout__content" ng-app="aplicacionAlgoritmos" hidden>
+        <div class="demo-blog__posts mdl-grid" ng-controller="controlador">
+          <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col" ng-repeat="algoritmos in algoritmo">
+            <a name={{algoritmos.ancle}} ></a>
+            <a href={{algoritmos.url}} class="mdl-card__media mdl-color-text--grey-50" style="background-image: url({{algoritmos.img}})">
+            </a>
+            <div class="mdl-color-text--grey-600 mdl-card__supporting-text" style="display:block">
+              {{algoritmos.info}}
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div class="minilogo"></div>
+              <div>
+                <strong>Publicado el: </strong>
+                <span>{{algoritmos.datePublic}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="mdl-layout__obfuscator"></div>
+    </div>
+  <div class="loader">
+    <svg viewBox="0 0 32 32" width="32" height="32">
+      <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+    </svg>
+  </div>
+</main>
+<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</body>
+</html>
